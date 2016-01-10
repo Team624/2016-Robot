@@ -1,0 +1,29 @@
+[
+	{
+		"name":"wait",
+		"id": 0,
+		"desc": "sleep for the specified duration",
+		"subs": [
+		{"name":"maxTime", "id":3,"desc":"wait duration (ms). (0 = forever)"}
+		]
+	},
+	
+	{
+		"name":"pidDrive",
+		"id": 1,
+		"desc": "drive wth PID control",
+		"subs": [
+		{"name":"maxTime", "id":3,"desc":"wait duration (ms). (0 = forever)"}
+		]
+	},
+	
+	{
+		"name":"hybridDrive",
+		"id": 2,
+		"desc":"drive with a feedforward + PID combo control",
+		"subs": [
+		{"name":"maxTime", "id":3,"desc":"wait duration (ms). (0 = forever)"}
+		]
+	},
+	
+]
