@@ -29,7 +29,6 @@
 		<Item Name="Dashboard Code" Type="Folder" URL="../Dashboard Code">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Open Playback Panel.vi" Type="VI" URL="../../2015Beta/Dashboard Code/WPI Stuff/Open Playback Panel.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
