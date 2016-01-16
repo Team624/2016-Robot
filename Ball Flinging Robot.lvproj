@@ -33,6 +33,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Begin.vi" Type="VI" URL="../Robot Code/Framework/Begin.vi"/>
+		<Item Name="Manual Intake Control.vi" Type="VI" URL="../Robot Code/Intake/Manual Intake Control.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
