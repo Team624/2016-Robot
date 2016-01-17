@@ -641,6 +641,9 @@
 			<Item Name="Manual Align.ctl" Type="VI" URL="../Robot Code/Intake/Manual Align.ctl"/>
 			<Item Name="Intake Modes.ctl" Type="VI" URL="../Robot Code/Intake/Intake Modes.ctl"/>
 			<Item Name="Intake Manual Bools.ctl" Type="VI" URL="../Robot Code/Intake/Intake Manual Bools.ctl"/>
+			<Item Name="Intake State Indicators.ctl" Type="VI" URL="../Robot Code/Intake/Intake State Indicators.ctl"/>
+			<Item Name="Pot Data.ctl" Type="VI" URL="../Robot Code/Sensors/Pot Data.ctl"/>
+			<Item Name="Inner Intake States.ctl" Type="VI" URL="../Robot Code/Intake/Inner Intake States.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -736,7 +739,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Robot Code" Type="Folder" URL="../Robot Code">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Pot Data.ctl" Type="VI" URL="../Pot Data.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -1344,7 +1346,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
-			<Item Name="Change Detect Double.vi" Type="VI" URL="../../2016-Robot/Common Code/Change Detect Double.vi"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
