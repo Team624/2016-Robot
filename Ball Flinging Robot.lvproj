@@ -644,12 +644,7 @@
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Manual Align.ctl" Type="VI" URL="../Robot Code/Intake/Manual Align.ctl"/>
-			<Item Name="Intake Modes.ctl" Type="VI" URL="../Robot Code/Intake/Intake Modes.ctl"/>
-			<Item Name="Intake Manual Bools.ctl" Type="VI" URL="../Robot Code/Intake/Intake Manual Bools.ctl"/>
-			<Item Name="Intake State Indicators.ctl" Type="VI" URL="../Robot Code/Intake/Intake State Indicators.ctl"/>
 			<Item Name="Pot Data.ctl" Type="VI" URL="../Robot Code/Sensors/Pot Data.ctl"/>
-			<Item Name="Inner Intake States.ctl" Type="VI" URL="../Robot Code/Intake/Inner Intake States.ctl"/>
 			<Item Name="provcom_GenerateGUID.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_GenerateGUID.vi"/>
 			<Item Name="mxLvGenerateGuid.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvGenerateGuid.vi"/>
 			<Item Name="mxLvErrorHandler.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvErrorHandler.vi"/>
@@ -1383,10 +1378,11 @@ AddOutputFilter chunkFilter
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
+			<Item Name="Axes.ctl" Type="VI" URL="../Common Code/Axes.ctl"/>
+			<Item Name="Driver Button Cluster.ctl" Type="VI" URL="../Common Code/Driver Button Cluster.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="IntakeModes.ctl" Type="VI" URL="../Common Code/IntakeModes.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
