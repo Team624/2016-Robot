@@ -638,6 +638,9 @@
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Intake Manual Bools (incomplete).ctl" Type="VI" URL="../Robot Code/Intake/Intake Manual Bools (incomplete).ctl"/>
+			<Item Name="Manual Align.ctl" Type="VI" URL="../Robot Code/Intake/Manual Align.ctl"/>
+			<Item Name="Intake Modes.ctl" Type="VI" URL="../Robot Code/Intake/Intake Modes.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1319,9 +1322,11 @@ AddOutputFilter chunkFilter
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
+			<Item Name="Change Detect Double.vi" Type="VI" URL="../../2016-Robot/Common Code/Change Detect Double.vi"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Intake Manual Bools (incomplete).ctl" Type="VI" URL="../Robot Code/Intake/Intake Manual Bools (incomplete).ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
