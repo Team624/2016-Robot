@@ -650,6 +650,7 @@
 			<Item Name="mxLvErrorHandler.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvErrorHandler.vi"/>
 			<Item Name="mxLvDebugDisplayCaller.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvDebugDisplayCaller.vi"/>
 			<Item Name="624ClearTalonSettings.vi" Type="VI" URL="../624 Fast Talon Lib/624ClearTalonSettings.vi"/>
+			<Item Name="Button Cluster.ctl" Type="VI" URL="../Common Code/Gamepads/Button Cluster.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1378,8 +1379,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
-			<Item Name="Axes.ctl" Type="VI" URL="../Common Code/Axes.ctl"/>
-			<Item Name="Driver Button Cluster.ctl" Type="VI" URL="../Common Code/Driver Button Cluster.ctl"/>
+			<Item Name="Button Cluster.ctl" Type="VI" URL="../Common Code/Gamepads/Button Cluster.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
