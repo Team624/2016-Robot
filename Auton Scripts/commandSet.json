@@ -4,7 +4,7 @@
 		"id": 0,
 		"desc": "sleep for the specified duration",
 		"subs": [
-		{"name":"maxTime", "id":3,"desc":"wait duration (ms). (0 = forever)"}
+		{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"}
 		]
 	},
 	
@@ -13,7 +13,11 @@
 		"id": 1,
 		"desc": "drive wth PID control",
 		"subs": [
-		{"name":"maxTime", "id":3,"desc":"wait duration (ms). (0 = forever)"}
+			{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
+			{"name":"y", "id":1,"desc":"distance to go in the y direction"},
+			{"name":"speed", "id":2,"desc":"speed to go in the y direction"},
+			{"name":"async", "id":3,"desc":"Wait until drive is finished (0=no, 1=yes)"},
+			{"name":"heading", "id":4,"desc":"angle to drive toward"}
 		]
 	},
 	
@@ -22,8 +26,49 @@
 		"id": 2,
 		"desc":"drive with a feedforward + PID combo control",
 		"subs": [
-		{"name":"maxTime", "id":3,"desc":"wait duration (ms). (0 = forever)"}
+			{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
+			{"name":"y", "id":1,"desc":"distance to go in the y direction"},
+			{"name":"speed", "id":2,"desc":"max speed allowed by motion profile"},
+			{"name":"async", "id":3,"desc":"Wait until drive is finished (0=no, 1=yes)"},
+			{"name":"heading", "id":4,"desc":"angle to drive toward"},
+			{"name":"accel", "id":5,"desc":"max accel allowed by the motion profile"}
 		]
 	},
+	
+	{
+		"name":"jump",
+		"id": 3,
+		"desc":"jump to a command",
+		"subs": [
+			{"name":"to", "id":0,"desc":"command to jump to"},
+			{"name":"condition", "id":1,"desc":"condition that would make you jump (0=none)"}
+		]
+	},
+	
+	{
+		"name":"shoot",
+		"id": 4,
+		"desc":"Shoot the ball",
+		"subs": [
+			{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
+			{"name":"type", "id":1,"desc":"type of shot to attempt (0=manual, 1=vision, 2=batter, 3=curve)"},
+			{"name":"leftRPM", "id":2,"desc":"override RPM of the left motor"},
+			{"name":"rightRPM", "id":3,"desc":"override RPM of the right motor"},
+			{"name":"override", "id":4,"desc":"use manual override? (0=no, 1=yes)"},
+			{"name":"angle", "id":5,"desc":"angle override"},
+			{"name":"angle_override", "id":6,"desc":"use angle override? (0=no, 1=yes)"},
+			
+			
+		]
+	},
+	
+	{"alias":"no", "represents":0},
+	{"alias":"yes", "represents":1},
+	{"alias":"forever", "represents":0},
+	{"alias":"manual", "represents":0},
+	{"alias":"vision", "represents":1},
+	{"alias":"batter", "represents":2},
+	{"alias":"curve", "represents":3},
+	{"alias":"none", "represents":0},
 	
 ]
