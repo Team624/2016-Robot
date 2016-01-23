@@ -54,7 +54,7 @@
 			{"name":"type", "id":1,"desc":"type of shot to attempt (0=manual, 1=vision, 2=batter, 3=curve)"},
 			{"name":"leftRPM", "id":2,"desc":"override RPM of the left motor"},
 			{"name":"rightRPM", "id":3,"desc":"override RPM of the right motor"},
-			{"name":"override", "id":4,"desc":"use manual override? (0=no, 1=yes)"},
+			{"name":"rpm_override", "id":4,"desc":"use rpm override? (0=no, 1=yes)"},
 			{"name":"angle", "id":5,"desc":"angle override"},
 			{"name":"angle_override", "id":6,"desc":"use angle override? (0=no, 1=yes)"},
 			
