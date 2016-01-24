@@ -61,6 +61,24 @@
 			
 		]
 	},
+	{
+    "name":"wait_for",
+    "id": 5,
+    "desc":"Waits for a condition to be true",
+    "subs" : [
+			{"name":"condition","id":2,"desc":"0=elev_zeroed, 1=one_tote, 2=two_totes, 3=three_totes, 4=past_y_dist, 5=past_x_dist, 6=elevator_ping_detect, 7=forward_past_y_dist, 8=elevator_in_position, 9=elevator_higher_than, 10=elevator_lower_than"},
+			{"name":"dist","id":0,"desc":"distance target"},
+			{"name":"maxTime", "id":3,"desc":"time limit (ms). (0 = forever)"},
+		    {"name":"height", "id":6, "desc":"elevator height"}
+		]
+	},
+	{
+    "name":"wait_for_drive",
+    "id": 6,
+    "desc":"Waits until driving completes",
+    "subs" : [
+		]
+	},
 	
 	{"alias":"no", "represents":0},
 	{"alias":"yes", "represents":1},
