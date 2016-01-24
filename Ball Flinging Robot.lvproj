@@ -355,14 +355,9 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Code/Robot Global Data.vi"/>
-			<Item Name="Pot Data.ctl" Type="VI" URL="../Robot Code/Sensors/Pot Data.ctl"/>
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Inner Intake States.ctl" Type="VI" URL="../Common Code/Inner Intake States.ctl"/>
-			<Item Name="Intake Command Cluster.ctl" Type="VI" URL="../Common Code/Intake Command Cluster.ctl"/>
-			<Item Name="Intake Mode Enum.ctl" Type="VI" URL="../Common Code/Intake Mode Enum.ctl"/>
-			<Item Name="Intake State Indicators.ctl" Type="VI" URL="../Common Code/Intake State Indicators.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
