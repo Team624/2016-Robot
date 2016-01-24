@@ -359,6 +359,10 @@
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Inner Intake States.ctl" Type="VI" URL="../Common Code/Inner Intake States.ctl"/>
+			<Item Name="Intake Command Cluster.ctl" Type="VI" URL="../Common Code/Intake Command Cluster.ctl"/>
+			<Item Name="Intake Mode Enum.ctl" Type="VI" URL="../Common Code/Intake Mode Enum.ctl"/>
+			<Item Name="Intake State Indicators.ctl" Type="VI" URL="../Common Code/Intake State Indicators.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1075,6 +1079,10 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Intake Command Cluster.ctl" Type="VI" URL="../Common Code/Intake Command Cluster.ctl"/>
+			<Item Name="Intake Manual.ctl" Type="VI" URL="../Common Code/Intake Manual.ctl"/>
+			<Item Name="Intake Modes.ctl" Type="VI" URL="../Common Code/Intake Modes.ctl"/>
+			<Item Name="Intake State Indicators.ctl" Type="VI" URL="../Common Code/Intake State Indicators.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
