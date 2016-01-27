@@ -450,6 +450,9 @@ AddOutputFilter chunkFilter
 		<Item Name="FeedForward-Lib" Type="Folder" URL="../FeedForward-Lib">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="navX" Type="Folder" URL="../navX">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="navX-MXP Library" Type="Folder" URL="../navX-MXP Library">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -930,6 +933,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_I2CDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/I2C/WPI_I2CDevRef.ctl"/>
 				<Item Name="WPI_I2COpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/I2C/WPI_I2COpen.vi"/>
 				<Item Name="WPI_I2CRead.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/I2C/WPI_I2CRead.vi"/>
+				<Item Name="WPI_I2CWrite.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/I2C/WPI_I2CWrite.vi"/>
 				<Item Name="WPI_JoystickButtonState.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickButtonState.ctl"/>
 				<Item Name="WPI_JoystickDeviceEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickDeviceEnum.ctl"/>
 				<Item Name="WPI_JoystickDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickDevRef.ctl"/>
@@ -1064,6 +1068,31 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Vision Packet.ctl" Type="VI" URL="../Common Code/Vision Packet.ctl"/>
+			<Item Name="WPI_SerialPort_USB.ctl" Type="VI" URL="../../NI WPI/WPI_SerialPort_USB.ctl"/>
+			<Item Name="Z900_navX_Close.vi" Type="VI" URL="../../navX Library v2/IO/Z900_navX_Close.vi"/>
+			<Item Name="Z900_navX_Flags_CalibrationStatusTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Flags/Z900_navX_Flags_CalibrationStatusTypeDef.ctl"/>
+			<Item Name="Z900_navX_Flags_HardwareRevTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Flags/Z900_navX_Flags_HardwareRevTypeDef.ctl"/>
+			<Item Name="Z900_navX_Flags_OmnimountConfigTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Flags/Z900_navX_Flags_OmnimountConfigTypeDef.ctl"/>
+			<Item Name="Z900_navX_Flags_OpStatusTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Flags/Z900_navX_Flags_OpStatusTypeDef.ctl"/>
+			<Item Name="Z900_navX_Get_Displacement.vi" Type="VI" URL="../../navX Library v2/Get/Z900_navX_Get_Displacement.vi"/>
+			<Item Name="Z900_navX_Get_LinearAcceleration.vi" Type="VI" URL="../../navX Library v2/Get/Z900_navX_Get_LinearAcceleration.vi"/>
+			<Item Name="Z900_navX_Get_Quaternion.vi" Type="VI" URL="../../navX Library v2/Get/Z900_navX_Get_Quaternion.vi"/>
+			<Item Name="Z900_navX_Get_RawValues_GyroAccelMag.vi" Type="VI" URL="../../navX Library v2/Get/Raw Values/Z900_navX_Get_RawValues_GyroAccelMag.vi"/>
+			<Item Name="Z900_navX_Get_SystemInformation_BoardInformation.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_BoardInformation.vi"/>
+			<Item Name="Z900_navX_Get_SystemInformation_MPUTemp.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_MPUTemp.vi"/>
+			<Item Name="Z900_navX_Get_SystemInformation_Offsets.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Offsets.vi"/>
+			<Item Name="Z900_navX_Get_SystemInformation_Status.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Status.vi"/>
+			<Item Name="Z900_navX_Get_SystemInformation_Timestamp.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Timestamp.vi"/>
+			<Item Name="Z900_navX_Get_YPRHfH.vi" Type="VI" URL="../../navX Library v2/Get/Z900_navX_Get_YPRHfH.vi"/>
+			<Item Name="Z900_navX_Internal_Error.vi" Type="VI" URL="../../navX Library v2/IO/Internal/Z900_navX_Internal_Error.vi"/>
+			<Item Name="Z900_navX_Open.vi" Type="VI" URL="../../navX Library v2/IO/Z900_navX_Open.vi"/>
+			<Item Name="Z900_navX_Open_I2C.vi" Type="VI" URL="../../navX Library v2/IO/Open/Z900_navX_Open_I2C.vi"/>
+			<Item Name="Z900_navX_Open_Serial.vi" Type="VI" URL="../../navX Library v2/IO/Open/Z900_navX_Open_Serial.vi"/>
+			<Item Name="Z900_navX_Open_SPI.vi" Type="VI" URL="../../navX Library v2/IO/Open/Z900_navX_Open_SPI.vi"/>
+			<Item Name="Z900_navX_SerialStreamTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Z900_navX_SerialStreamTypeDef.ctl"/>
+			<Item Name="Z900_navX_Set_SerialProtocol.vi" Type="VI" URL="../../navX Library v2/Set/Z900_navX_Set_SerialProtocol.vi"/>
+			<Item Name="Z900_navX_Set_ZeroDisplacement.vi" Type="VI" URL="../../navX Library v2/Set/Z900_navX_Set_ZeroDisplacement.vi"/>
+			<Item Name="Z900_navX_Set_ZeroYaw.vi" Type="VI" URL="../../navX Library v2/Set/Z900_navX_Set_ZeroYaw.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
