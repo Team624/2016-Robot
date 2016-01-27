@@ -453,9 +453,6 @@ AddOutputFilter chunkFilter
 		<Item Name="navX" Type="Folder" URL="../navX">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="navX-MXP Library" Type="Folder" URL="../navX-MXP Library">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="Robot Code" Type="Folder" URL="../Robot Code">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -1052,6 +1049,7 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Intake Command Cluster.ctl" Type="VI" URL="../Common Code/Intake Command Cluster.ctl"/>
+			<Item Name="navX-MXP IMU.lvlib" Type="Library" URL="../navX-MXP Library/navX-MXP IMU.lvlib"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1064,8 +1062,6 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-
-			<Item Name="Vision Packet.ctl" Type="VI" URL="../Common Code/Vision Packet.ctl"/>
 			<Item Name="WPI_SerialPort_USB.ctl" Type="VI" URL="../../NI WPI/WPI_SerialPort_USB.ctl"/>
 			<Item Name="Z900_navX_Close.vi" Type="VI" URL="../../navX Library v2/IO/Z900_navX_Close.vi"/>
 			<Item Name="Z900_navX_Flags_CalibrationStatusTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Flags/Z900_navX_Flags_CalibrationStatusTypeDef.ctl"/>
@@ -1091,7 +1087,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Z900_navX_Set_SerialProtocol.vi" Type="VI" URL="../../navX Library v2/Set/Z900_navX_Set_SerialProtocol.vi"/>
 			<Item Name="Z900_navX_Set_ZeroDisplacement.vi" Type="VI" URL="../../navX Library v2/Set/Z900_navX_Set_ZeroDisplacement.vi"/>
 			<Item Name="Z900_navX_Set_ZeroYaw.vi" Type="VI" URL="../../navX Library v2/Set/Z900_navX_Set_ZeroYaw.vi"/>
-
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
