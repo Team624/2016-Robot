@@ -448,9 +448,6 @@ AddOutputFilter chunkFilter
 		<Item Name="navX" Type="Folder" URL="../navX">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="navX-MXP Library" Type="Folder" URL="../navX-MXP Library">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="Robot Code" Type="Folder" URL="../Robot Code">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -1108,6 +1105,7 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Intake Command Cluster.ctl" Type="VI" URL="../Common Code/Intake Command Cluster.ctl"/>
+			<Item Name="navX-MXP IMU.lvlib" Type="Library" URL="../navX-MXP Library/navX-MXP IMU.lvlib"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1120,31 +1118,6 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="WPI_SerialPort_USB.ctl" Type="VI" URL="../../NI WPI/WPI_SerialPort_USB.ctl"/>
-			<Item Name="Z900_navX_Close.vi" Type="VI" URL="../../navX Library v2/IO/Z900_navX_Close.vi"/>
-			<Item Name="Z900_navX_Flags_CalibrationStatusTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Flags/Z900_navX_Flags_CalibrationStatusTypeDef.ctl"/>
-			<Item Name="Z900_navX_Flags_HardwareRevTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Flags/Z900_navX_Flags_HardwareRevTypeDef.ctl"/>
-			<Item Name="Z900_navX_Flags_OmnimountConfigTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Flags/Z900_navX_Flags_OmnimountConfigTypeDef.ctl"/>
-			<Item Name="Z900_navX_Flags_OpStatusTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Flags/Z900_navX_Flags_OpStatusTypeDef.ctl"/>
-			<Item Name="Z900_navX_Get_Displacement.vi" Type="VI" URL="../../navX Library v2/Get/Z900_navX_Get_Displacement.vi"/>
-			<Item Name="Z900_navX_Get_LinearAcceleration.vi" Type="VI" URL="../../navX Library v2/Get/Z900_navX_Get_LinearAcceleration.vi"/>
-			<Item Name="Z900_navX_Get_Quaternion.vi" Type="VI" URL="../../navX Library v2/Get/Z900_navX_Get_Quaternion.vi"/>
-			<Item Name="Z900_navX_Get_RawValues_GyroAccelMag.vi" Type="VI" URL="../../navX Library v2/Get/Raw Values/Z900_navX_Get_RawValues_GyroAccelMag.vi"/>
-			<Item Name="Z900_navX_Get_SystemInformation_BoardInformation.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_BoardInformation.vi"/>
-			<Item Name="Z900_navX_Get_SystemInformation_MPUTemp.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_MPUTemp.vi"/>
-			<Item Name="Z900_navX_Get_SystemInformation_Offsets.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Offsets.vi"/>
-			<Item Name="Z900_navX_Get_SystemInformation_Status.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Status.vi"/>
-			<Item Name="Z900_navX_Get_SystemInformation_Timestamp.vi" Type="VI" URL="../../navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Timestamp.vi"/>
-			<Item Name="Z900_navX_Get_YPRHfH.vi" Type="VI" URL="../../navX Library v2/Get/Z900_navX_Get_YPRHfH.vi"/>
-			<Item Name="Z900_navX_Internal_Error.vi" Type="VI" URL="../../navX Library v2/IO/Internal/Z900_navX_Internal_Error.vi"/>
-			<Item Name="Z900_navX_Open.vi" Type="VI" URL="../../navX Library v2/IO/Z900_navX_Open.vi"/>
-			<Item Name="Z900_navX_Open_I2C.vi" Type="VI" URL="../../navX Library v2/IO/Open/Z900_navX_Open_I2C.vi"/>
-			<Item Name="Z900_navX_Open_Serial.vi" Type="VI" URL="../../navX Library v2/IO/Open/Z900_navX_Open_Serial.vi"/>
-			<Item Name="Z900_navX_Open_SPI.vi" Type="VI" URL="../../navX Library v2/IO/Open/Z900_navX_Open_SPI.vi"/>
-			<Item Name="Z900_navX_SerialStreamTypeDef.ctl" Type="VI" URL="../../navX Library v2/TypeDefs/Z900_navX_SerialStreamTypeDef.ctl"/>
-			<Item Name="Z900_navX_Set_SerialProtocol.vi" Type="VI" URL="../../navX Library v2/Set/Z900_navX_Set_SerialProtocol.vi"/>
-			<Item Name="Z900_navX_Set_ZeroDisplacement.vi" Type="VI" URL="../../navX Library v2/Set/Z900_navX_Set_ZeroDisplacement.vi"/>
-			<Item Name="Z900_navX_Set_ZeroYaw.vi" Type="VI" URL="../../navX Library v2/Set/Z900_navX_Set_ZeroYaw.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -1164,7 +1137,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -1174,7 +1147,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{66C807CC-31D8-43A9-B716-105BF240133A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6512CE84-A18C-4F45-8475-092DA2426F7B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Target/Robot Code/Robot Main.vi</Property>
