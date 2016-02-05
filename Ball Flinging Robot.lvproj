@@ -1119,8 +1119,6 @@ AddOutputFilter chunkFilter
 			<Item Name="GetLinearAcceleration.vi" Type="VI" URL="../navX-MXP Library/COMMON/Get/GetLinearAcceleration.vi"/>
 			<Item Name="Intake Command Cluster.ctl" Type="VI" URL="../Common Code/Intake Command Cluster.ctl"/>
 			<Item Name="navX GetRefnum.vi" Type="VI" URL="../navX-MXP Library/COMMON/Refnum/navX GetRefnum.vi"/>
-			<Item Name="navX NAVX_CAL_STATUS.ctl" Type="VI" URL="../navX-MXP Library/COMMON/TypeDefs/Value TypeDefs/navX NAVX_CAL_STATUS.ctl"/>
-			<Item Name="navX NAVX_OP_STATUS.ctl" Type="VI" URL="../navX-MXP Library/COMMON/TypeDefs/Value TypeDefs/navX NAVX_OP_STATUS.ctl"/>
 			<Item Name="navX Vector Data.ctl" Type="VI" URL="../navX-MXP Library/COMMON/TypeDefs/Data TypeDefs/navX Vector Data.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
