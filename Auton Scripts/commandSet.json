@@ -4,7 +4,7 @@
 		"id": 0,
 		"desc": "sleep for the specified duration",
 		"subs": [
-		{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"}
+				{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"}
 		]
 	},
 	
@@ -13,11 +13,11 @@
 		"id": 1,
 		"desc": "drive wth PID control",
 		"subs": [
-			{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
-			{"name":"y", "id":1,"desc":"distance to go in the y direction"},
-			{"name":"speed", "id":2,"desc":"speed to go in the y direction"},
-			{"name":"async", "id":3,"desc":"Wait until drive is finished (0=no, 1=yes)"},
-			{"name":"heading", "id":4,"desc":"angle to drive toward"}
+				{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
+				{"name":"y", "id":1,"desc":"distance to go in the y direction"},
+				{"name":"speed", "id":2,"desc":"speed to go in the y direction"},
+				{"name":"async", "id":3,"desc":"Wait until drive is finished (0=no, 1=yes)"},
+				{"name":"heading", "id":4,"desc":"angle to drive toward"}
 		]
 	},
 	
@@ -26,12 +26,12 @@
 		"id": 2,
 		"desc":"drive with a feedforward + PID combo control",
 		"subs": [
-			{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
-			{"name":"y", "id":1,"desc":"distance to go in the y direction"},
-			{"name":"speed", "id":2,"desc":"max speed allowed by motion profile"},
-			{"name":"async", "id":3,"desc":"Wait until drive is finished (0=no, 1=yes)"},
-			{"name":"heading", "id":4,"desc":"angle to drive toward"},
-			{"name":"accel", "id":5,"desc":"max accel allowed by the motion profile"}
+				{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
+				{"name":"y", "id":1,"desc":"distance to go in the y direction"},
+				{"name":"speed", "id":2,"desc":"max speed allowed by motion profile"},
+				{"name":"async", "id":3,"desc":"Wait until drive is finished (0=no, 1=yes)"},
+				{"name":"heading", "id":4,"desc":"angle to drive toward"},
+				{"name":"accel", "id":5,"desc":"max accel allowed by the motion profile"}
 		]
 	},
 	
@@ -40,8 +40,8 @@
 		"id": 3,
 		"desc":"jump to a command",
 		"subs": [
-			{"name":"to", "id":0,"desc":"command to jump to"},
-			{"name":"condition", "id":1,"desc":"condition that would make you jump (0=none)"}
+				{"name":"to", "id":0,"desc":"command to jump to"},
+				{"name":"condition", "id":1,"desc":"condition that would make you jump (0=none)"}
 		]
 	},
 	
@@ -50,15 +50,13 @@
 		"id": 4,
 		"desc":"Shoot the ball",
 		"subs": [
-			{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
-			{"name":"type", "id":1,"desc":"type of shot to attempt (0=manual, 1=vision, 2=batter, 3=curve)"},
-			{"name":"leftRPM", "id":2,"desc":"override RPM of the left motor"},
-			{"name":"rightRPM", "id":3,"desc":"override RPM of the right motor"},
-			{"name":"rpm_override", "id":4,"desc":"use rpm override? (0=no, 1=yes)"},
-			{"name":"angle", "id":5,"desc":"angle override"},
-			{"name":"angle_override", "id":6,"desc":"use angle override? (0=no, 1=yes)"},
-			
-			
+				{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
+				{"name":"type", "id":1,"desc":"type of shot to attempt (0=manual, 1=vision, 2=batter, 3=curve)"},
+				{"name":"leftRPM", "id":2,"desc":"override RPM of the left motor"},
+				{"name":"rightRPM", "id":3,"desc":"override RPM of the right motor"},
+				{"name":"rpm_override", "id":4,"desc":"use rpm override? (0=no, 1=yes)"},
+				{"name":"angle", "id":5,"desc":"angle override"},
+				{"name":"angle_override", "id":6,"desc":"use angle override? (0=no, 1=yes)"},
 		]
 	},
 	{
@@ -79,6 +77,25 @@
     "subs" : [
 		]
 	},
+	{
+    "name":"set_intake",
+    "id": 7,
+    "desc":"sets everything to do with the intake",
+    "subs" : [
+			{"name":"mode", "id":0, "desc":"Intake Mode (0=Manual,1=Safe,2=Auto)"},
+			{"name":"command", "id":1, "desc":"Intake Command (0=idle,1=load,2=unload,3=pull_up,4=drop_low,5=lift_half)"},
+			{"name":"intake", "id":2, "desc":"Manual Intake? (0=no,1=yes)"},
+			{"name":"eject", "id":3, "desc":"Manual Eject? (0=no,1=yes)"},
+			{"name":"override_intake", "id":4, "desc":"Override Intake? (0=no,1=yes)"},
+			{"name":"override_speed", "id":5, "desc":"Override Speed"},
+			{"name":"override_eject", "id":6, "desc":"Override Eject? (0=no,1=yes)"},
+			{"name":"override_eject_speed", "id":7, "desc":"Override Eject Speed"},
+			{"name":"override_arm", "id":8, "desc":"Override Arm Speed? (0=no, 1=yes)"},
+			{"name":"arm_speed", "id":8, "desc":"Arm Speed"},
+			{"name":"override_arm", "id":8, "desc":"Override Arm Angle? (0=no, 1=yes)"},
+			{"name":"arm_angle", "id":9, "desc":"Arm Angle"}
+		]
+	},
 	
 	{"alias":"no", "represents":0},
 	{"alias":"yes", "represents":1},
@@ -88,5 +105,14 @@
 	{"alias":"batter", "represents":2},
 	{"alias":"curve", "represents":3},
 	{"alias":"none", "represents":0},
+	{"alias":"manual", "represents":0},
+	{"alias":"safe", "represents":1},
+	{"alias":"auto", "represents":2},
+	{"alias":"idle", "represents":0},
+	{"alias":"load", "represents":1},
+	{"alias":"unload", "represents":2},
+	{"alias":"pull_up", "represents":3},
+	{"alias":"drop_low", "represents":4},
+	{"alias":"lift_half", "represents":5},
 	
 ]
