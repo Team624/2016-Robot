@@ -1132,12 +1132,6 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Z900_navX_Flags_CalibrationStatusTypeDef.ctl" Type="VI" URL="../navX/navX Library v2/TypeDefs/Flags/Z900_navX_Flags_CalibrationStatusTypeDef.ctl"/>
-			<Item Name="Z900_navX_Flags_OpStatusTypeDef.ctl" Type="VI" URL="../navX/navX Library v2/TypeDefs/Flags/Z900_navX_Flags_OpStatusTypeDef.ctl"/>
-			<Item Name="Z900_navX_Get_LinearAcceleration.vi" Type="VI" URL="../navX/navX Library v2/Get/Z900_navX_Get_LinearAcceleration.vi"/>
-			<Item Name="Z900_navX_Get_RawValues_GyroAccelMag.vi" Type="VI" URL="../navX/navX Library v2/Get/Raw Values/Z900_navX_Get_RawValues_GyroAccelMag.vi"/>
-			<Item Name="Z900_navX_Get_SystemInformation_MPUTemp.vi" Type="VI" URL="../navX/navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_MPUTemp.vi"/>
-			<Item Name="Z900_navX_Get_SystemInformation_Status.vi" Type="VI" URL="../navX/navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Status.vi"/>
 			<Item Name="Z900_navX_Get_YPRHfH.vi" Type="VI" URL="../navX/navX Library v2/Get/Z900_navX_Get_YPRHfH.vi"/>
 			<Item Name="Z900_navX_RefNum_Get.vi" Type="VI" URL="../navX/navX Library v2/RefNum/Z900_navX_RefNum_Get.vi"/>
 		</Item>
@@ -1159,7 +1153,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
