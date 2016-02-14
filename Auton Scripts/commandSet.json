@@ -40,8 +40,8 @@
 		"id": 3,
 		"desc":"jump to a command",
 		"subs": [
-				{"name":"to", "id":0,"desc":"command to jump to"},
-				{"name":"condition", "id":1,"desc":"condition that would make you jump (0=none)"}
+				{"name":"ahead", "id":0,"desc":"command to jump to"},
+				{"name":"condition", "id":1,"desc":"condition that would make you jump (0=none,1= Start_pos>3)"}
 		]
 	},
 	
@@ -126,6 +126,24 @@
     "subs" : [
 		]
 	},
+	{
+    "name":"yaw_zero",
+    "id": 12,
+    "desc":"sets a reference angle for gyro orientation",
+    "subs" : [
+			{"name":"angle","id":4,"desc":"reference angle to set"},
+		]
+	},
+	{
+    "name":"tank_drive",
+    "id": 13,
+    "desc":"controls robot using tank mode",
+    "subs" : [
+			{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
+			{"name":"left","id":1,"desc":"reference angle to set"},
+			{"name":"right","id":2,"desc":"reference angle to set"},
+		]
+	},
 	
 	{"alias":"no", "represents":0},
 	{"alias":"yes", "represents":1},
@@ -145,5 +163,6 @@
 	{"alias":"pull_up", "represents":3},
 	{"alias":"drop_low", "represents":4},
 	{"alias":"lift_half", "represents":5},
+	{"alias":"goal_detected", "represents":2},
 	
 ]
