@@ -104,10 +104,26 @@
 	},
 	{
     "name":"warmup",
-    "id": 8,
+    "id": 9,
     "desc":"Warms up the shooter",
     "subs" : [
 			{"name":"type", "id":1,"desc":"type of shot to attempt (0=manual, 1=vision, 2=batter, 3=corner, 4=middle)"},
+		]
+	},
+	{
+    "name":"set_drive",
+    "id": 10,
+    "desc":"Drives without distance PID, just using gyro",
+    "subs" : [
+			{"name":"y","id":2,"desc":"y speed"},
+			{"name":"heading","id":4,"desc":"gyro heading target"}
+		]
+	}, 
+	{
+    "name":"shift",
+    "id": 11,
+    "desc":"shifts gears",
+    "subs" : [
 		]
 	},
 	
