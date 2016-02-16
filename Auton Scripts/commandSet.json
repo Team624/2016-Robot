@@ -144,6 +144,16 @@
 			{"name":"right","id":2,"desc":"reference angle to set"},
 		]
 	},
+	{
+    "name":"fast_pivot",
+    "id": 14,
+    "desc":"turns in place real fast",
+    "subs" : [
+			{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
+			{"name":"speed","id":2,"desc":"speed to pivot at"},
+			{"name":"heading","id":4,"desc":"the heading to pivot to"},
+		]
+	},
 	
 	{"alias":"no", "represents":0},
 	{"alias":"yes", "represents":1},
