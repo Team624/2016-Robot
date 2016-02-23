@@ -1,3 +1,0 @@
-﻿yaw_zero angle=0
-pidDrive y=2.5 speed=0.5 async=no
-wait_for_drive

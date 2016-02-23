@@ -1,9 +1,0 @@
-﻿//Turns correct direction until goal detected
-jump ahead=5 condition=1
-tank_drive right=-0.5 left=0.5
-wait_for condition=goal_detected
-tank_drive left=0 right=0
-jump ahead=4 condition=0
-tank_drive right=-0.5 left=0.5
-wait_for condition=goal_detected
-tank_drive left=0 right=0
