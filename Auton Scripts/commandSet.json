@@ -65,8 +65,8 @@
     "desc":"Waits for a condition to be true",
     "subs" : [
 			{"name":"maxTime", "id":0,"desc":"time limit (ms). (0 = forever)"},
-			{"name":"condition","id":2,"desc":""},
-			
+			{"name":"condition","id":1,"desc":""},
+			{"name":"distance","id":2,"desc":""},
 		]
 	},
 	{
@@ -154,6 +154,23 @@
 			{"name":"heading","id":4,"desc":"the heading to pivot to"},
 		]
 	},
+	{
+    "name":"stop_shooting",
+    "id": 15,
+    "desc":"sets shooter to idle",
+    "subs" : [
+			
+		]
+	},
+	{
+    "name":"lower_shooter",
+    "id": 16,
+    "desc":"sets shooter to low position",
+    "subs" : [
+			
+		]
+	},
+	
 	
 	{"alias":"no", "represents":0},
 	{"alias":"yes", "represents":1},
@@ -174,5 +191,6 @@
 	{"alias":"drop_low", "represents":4},
 	{"alias":"lift_half", "represents":5},
 	{"alias":"goal_detected", "represents":2},
+	{"alias":"past_y_dist", "represents":0},
 	
 ]
