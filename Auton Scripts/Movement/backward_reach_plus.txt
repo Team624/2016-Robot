@@ -1,5 +1,5 @@
 ﻿yaw_zero angle=180
-set_drive y=-.8 heading=0
-wait_for condition=past_y_dist distance=3.5
-set_drive y=-.3
-wait_for condition=past_y_dist distance=4
+set_drive y=-.8 heading=180
+wait_for condition=past_y_dist distance=2.5
+set_drive y=-.3 heading=180
+wait_for condition=past_y_dist distance=3

@@ -41,7 +41,8 @@
 		"desc":"jump to a command",
 		"subs": [
 				{"name":"ahead", "id":0,"desc":"command to jump to"},
-				{"name":"condition", "id":1,"desc":"condition that would make you jump (0=none,1= Start_pos>3)"}
+				{"name":"condition", "id":1,"desc":"condition that would make you jump (0=none,1= Start_pos>3 2=start_pos)"},
+				{"name":"pos", "id":2,"desc":"position to compare"}
 		]
 	},
 	

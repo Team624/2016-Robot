@@ -30,7 +30,7 @@ set_drive y=-0.6 heading=47.3
 wait_for condition=past_y_dist distance=-1
 fast_pivot heading=9 speed=.6
 set_drive y=-0.6 heading=9
-set_intake mode=auto command=load
+set_intake mode=auto command=drop_low
 wait_for condition=past_y_dist distance=-6.25
 set_drive y=-0.6 heading=0
 wait_for condition=past_y_dist distance=-16
