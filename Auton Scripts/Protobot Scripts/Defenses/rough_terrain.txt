@@ -1,4 +1,5 @@
 ﻿set_drive y=1 heading=0
-wait_for condition=4
+wait maxTime=2000
+;wait_for condition=4
 set_drive y=0 heading=0
 resetEncoders
