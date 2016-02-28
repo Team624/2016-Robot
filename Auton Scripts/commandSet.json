@@ -171,6 +171,15 @@
 			
 		]
 	},
+	{
+	"name":"positionDrive",
+	"id":17,
+	"desc":"drives to desired defense position from current position (1 starting from low bar)",
+	"subs" : [
+			{"name":"currentPos", "id":0,"desc":"current position of robot"},
+			{"name":"desiredPos", "id":1,"desc":"desired position to drive to"},
+		]
+	},
 	
 	
 	{"alias":"no", "represents":0},
