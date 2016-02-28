@@ -13,7 +13,7 @@ set_drive y=.6 heading=0
 wait_for condition=past_y_dist distance=16
 set_drive y=0
 fast_pivot heading=47.3 speed=.5
-//set_drive heading=50 y=0
+//set_drive heading=50 y=0it
 //wait maxTime=1500
 resetEncoders
 set_drive y=.6 heading=47.3
