@@ -201,5 +201,6 @@
 	{"alias":"lift_half", "represents":5},
 	{"alias":"goal_detected", "represents":2},
 	{"alias":"past_y_dist", "represents":0},
+	{"alias":"past_roll_limit", "represents":7},
 	
 ]
