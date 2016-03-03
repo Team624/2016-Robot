@@ -8,7 +8,9 @@ jump condition=0 ahead=5
 set_drive y=.7 heading=0
 wait_for condition=past_y_dist distance=9
 set_drive y=0
-jump condition=2 pos=5 ahead=3
+jump condition=2 pos=5 ahead=5
+jump condition=2 pos=2 ahead=2
+jump condition=0 ahead=4
 fast_pivot heading=40 speed=0.8
 jump condition=0 ahead=2
 fast_pivot heading=-40 speed=0.8
