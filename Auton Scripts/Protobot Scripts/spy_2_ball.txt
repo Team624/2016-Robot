@@ -22,6 +22,7 @@ set_drive y=0
 //get the next ball
 set_intake mode=auto command=load
 //TIME FOR SPLINES
+resetEncoders
 //Segment 1
 set_drive y=-0.9 heading=0
 wait_for condition=past_y_dist distance=-.979
@@ -33,19 +34,19 @@ set_drive y=-0.9 heading=-49.57
 wait_for condition=past_y_dist distance=-.739
 //Segment 3
 resetEncoders
-set_drive y=-49.57 heading=0
+set_drive y=0 heading=-49.57
 fast_pivot heading=-67.24 speed=0.9
 set_drive y=-0.9 heading=-67.24
 wait_for condition=past_y_dist distance=-.650
 //Segment 4
 resetEncoders
-set_drive y=-67.24 heading=0
+set_drive y=0 heading=-67.24
 fast_pivot heading=-59.69 speed=0.9
 set_drive y=-0.9 heading=-59.69
 wait_for condition=past_y_dist distance=-.615
 //Segment 5
 resetEncoders
-set_drive y=-59.69 heading=0
+set_drive y=0 heading=-59.69
 fast_pivot heading=0 speed=0.9
 set_drive y=-0.9 heading=0
 wait_for condition=past_y_dist distance=-.646
