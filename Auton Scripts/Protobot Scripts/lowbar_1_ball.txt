@@ -24,8 +24,8 @@ set_drive y=0 heading=48
 ;set_intake mode=auto command=load
 shoot mode=auto type=middle
 resetEncoders
-wait maxTime=500
-set_intake mode=auto command=pull_up
+wait maxTime=750
+set_intake mode=auto command=lift_half
 set_drive y=-0.6 heading=48
 wait_for condition=past_y_dist distance=-1
 fast_pivot heading=9 speed=.6
