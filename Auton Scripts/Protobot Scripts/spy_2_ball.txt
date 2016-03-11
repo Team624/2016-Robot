@@ -2,7 +2,7 @@
 yaw_zero angle=0
 set_drive y=-0.9 heading=-10
 warmup type=corner
-wait_for condition=past_y_dist distance=7
+wait_for condition=past_y_dist distance=-7
 set_drive y=0 heading=-10
 set_intake mode=auto command=drop_low
 set_drive y=0 heading=48
@@ -15,9 +15,9 @@ fast_pivot heading=8 speed=0.9
 resetEncoders
 //set_intake mode=auto command=pull_up
 set_drive y=-0.9 heading=5
-wait_for condition=past_y_dist distance=2
+wait_for condition=past_y_dist distance=-2
 set_drive y=-0.9 heading=0
-wait_for condition=past_y_dist distance=12
+wait_for condition=past_y_dist distance=-12
 set_drive y=0
 //get the next ball
 set_intake mode=auto command=load

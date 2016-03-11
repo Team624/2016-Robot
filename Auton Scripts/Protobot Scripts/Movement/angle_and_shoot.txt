@@ -1,4 +1,5 @@
 ﻿warmup type=middle
+set_intake mode=auto command=drop_low
 jump condition=2 pos=2 ahead=4
 jump condition=2 pos=3 ahead=5
 jump condition=2 pos=4 ahead=6
