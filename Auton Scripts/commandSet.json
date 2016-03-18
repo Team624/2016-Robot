@@ -179,6 +179,16 @@
 			{"name":"desiredPos", "id":1,"desc":"desired position to drive to"},
 		]
 	},
+	{
+	"name":"set_shooter",
+	"id":18,
+	"desc":"sets shooter controls instead of having multiple commands",
+	"subs" : [
+			{"name":"mode", "id":0,"desc":"Desired Shooter Mode"},
+			{"name":"type", "id":1,"desc":"Desired Shot Type"},
+			{"name":"command", "id":2,"desc":"Desired Command for the shooter"},
+		]
+	},
 	
 	
 	{"alias":"no", "represents":0},
@@ -189,6 +199,7 @@
 	{"alias":"batter", "represents":2},
 	{"alias":"corner", "represents":3},
 	{"alias":"middle", "represents":4},
+	{"alias":"cleat", "represents":5},
 	{"alias":"none", "represents":0},
 	{"alias":"manual", "represents":0},
 	{"alias":"safe", "represents":1},
@@ -202,5 +213,7 @@
 	{"alias":"goal_detected", "represents":2},
 	{"alias":"past_y_dist", "represents":0},
 	{"alias":"past_roll_limit", "represents":7},
+	{"alias":"warm", "represents":1},
+	{"alias":"shot", "represents":2},
 	
 ]

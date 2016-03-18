@@ -1,0 +1,49 @@
+﻿yaw_zero angle=0
+set_intake mode=auto command=load
+set_drive y=0 heading=0
+wait maxTime=750
+//TIME FOR SPLINES
+//Segment 5
+set_drive y=0 heading=-59.69
+fast_pivot heading=0 speed=0.9
+set_drive y=0.9 heading=0
+wait_for condition=past_y_dist distance=.646
+//Segment 4
+resetEncoders
+set_drive y=0 heading=-67.24
+fast_pivot heading=-59.69 speed=0.9
+set_drive y=0.9 heading=-59.69
+wait_for condition=past_y_dist distance=.615
+//Segment 3
+resetEncoders
+set_drive y=0 heading=-49.57
+fast_pivot heading=-67.24 speed=0.9
+set_drive y=0.9 heading=-67.24
+wait_for condition=past_y_dist distance=.650
+//Segment 2
+resetEncoders
+set_drive y=0 heading=0
+fast_pivot heading=-49.57 speed=0.9
+set_drive y=0.9 heading=-49.57
+wait_for condition=past_y_dist distance=.739
+//Segment 1
+resetEncoders
+set_drive y=0.9 heading=0
+wait_for condition=past_y_dist distance=.979
+//End Pseudo-Spline
+//Now We are at the low bar
+resetEncoders
+set_drive y=0.8 heading=0
+wait_for condition=past_y_dist distance=10.5
+set_shooter mode=auto type=middle command=warm
+set_drive y=0.9 heading=9
+set_intake mode=auto command=pull_up
+wait_for condition=past_y_dist distance=13.5
+set_drive y=0.8 heading=0
+wait_for condition=past_y_dist distance=14
+set_drive y=0
+//Turn toward the goal
+fast_pivot heading=40 speed=0.9
+set_intake mode=auto command=drop_low
+//shoot
+set_shooter mode=auto type=middle command=shot
