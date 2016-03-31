@@ -216,5 +216,6 @@
 	{"alias":"vision_aligned", "represents":8},
 	{"alias":"warm", "represents":1},
 	{"alias":"shot", "represents":2},
+	{"alias":"vision_not_found", "represents":3},
 	
 ]
