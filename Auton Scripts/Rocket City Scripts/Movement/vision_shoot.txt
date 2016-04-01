@@ -16,9 +16,9 @@ set_drive y=0 heading=25
 fast_pivot heading=55 speed=0.8
 jump condition=0 ahead=2
 fast_pivot heading=-25 speed=0.8
-;set_shooter mode=auto type=vision command=warm
-;wait maxTime=1500
 set_shooter mode=auto type=vision command=warm
-wait maxTime=1000
+wait maxTime=500
+set_shooter mode=auto type=vision command=warm
+wait maxTime=750
 set_shooter mode=auto type=vision command=shot
 set_intake mode=auto command=pull_up

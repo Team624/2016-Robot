@@ -13,7 +13,7 @@ wait_for condition=past_y_dist distance=15.5
 set_drive y=.6 heading=0
 wait_for condition=past_y_dist distance=16
 set_drive y=0
-fast_pivot heading=53 speed=.5
+fast_pivot heading=53 speed=.6
 //set_drive heading=50 y=0
 //wait maxTime=1500
 set_intake mode=auto command=idle

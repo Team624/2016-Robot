@@ -17,6 +17,6 @@ fast_pivot heading=0 speed=0.8
 resetEncoders
 ;wait maxTime=500
 set_drive y=-0.7 heading=0
-wait_for condition=past_y_dist distance=-0.75
+wait_for condition=past_y_dist distance=-1
 set_intake mode=auto command=idle
 resetEncoders
