@@ -11,7 +11,7 @@ set_drive y=.6 heading=9
 set_intake mode=auto command=pull_up
 wait_for condition=past_y_dist distance=15.5
 set_drive y=.6 heading=0
-wait_for condition=past_y_dist distance=16
+wait_for condition=past_y_dist distance=17
 set_drive y=0
 fast_pivot heading=53 speed=.6
 //set_drive heading=50 y=0
@@ -19,7 +19,7 @@ fast_pivot heading=53 speed=.6
 set_intake mode=auto command=idle
 resetEncoders
 set_drive y=.6 heading=53
-wait_for condition=past_y_dist distance=2
+wait_for condition=past_y_dist distance=1
 ;set_intake mode=auto command=idle
 set_drive y=0 heading=53
 ;set_intake mode=auto command=load
@@ -39,15 +39,15 @@ wait maxTime=500
 set_shooter mode=auto type=middle command=shot
 set_shooter mode=auto type=middle command=idle
 resetEncoders
-wait maxTime=750
+wait maxTime=250
 set_intake mode=auto command=lift_half
-set_drive y=-0.6 heading=53
-wait_for condition=past_y_dist distance=-2.5
+set_drive y=-0.8 heading=53
+wait_for condition=past_y_dist distance=-0.75
 set_drive y=0 heading=9
 fast_pivot heading=9 speed=.6
 set_drive y=-0.8 heading=9
 set_intake mode=auto command=drop_low
-wait_for condition=past_y_dist distance=-7.25
+wait_for condition=past_y_dist distance=-5.25
 set_drive y=-0.8 heading=0
-wait_for condition=past_y_dist distance=-19
+wait_for condition=past_y_dist distance=-17
 set_drive y=0
