@@ -2,7 +2,7 @@
 yaw_zero angle=0
 set_drive y=.6
 wait_for condition=past_y_dist distance=1.5
-set_intake mode=auto command=idle
+set_intake mode=auto command=drop_low
 wait_for condition=past_y_dist distance=10
 ;warmup type=middle
 ;set_shooter type=middle command=warm mode=auto
