@@ -2,12 +2,12 @@
 ;wait_for condition=past_y_dist distance=-3.75
 set_drive y=0 heading=180
 set_intake mode=auto command=drop_low
-wait maxTime=700
+wait maxTime=400
 set_drive y=-0.7 heading=180
-wait maxTime=750
+;wait maxTime=250
 set_intake mode=auto command=pull_up
-;wait maxTime=500
-wait_for condition=past_roll_limit maxTime=500
+wait maxTime=500
+wait_for condition=past_roll_limit maxTime=1000
 resetEncoders
 set_drive y=-0.7 heading=180
 wait_for condition=past_y_dist distance=-1
