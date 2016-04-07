@@ -8,7 +8,7 @@ wait_for condition=past_y_dist distance=10
 ;set_shooter type=middle command=warm mode=auto
 wait_for condition=past_y_dist distance=10.5
 set_drive y=.6 heading=9
-set_intake mode=auto command=pull_up
+set_intake mode=auto command=idle
 wait_for condition=past_y_dist distance=15.5
 set_drive y=.6 heading=0
 wait_for condition=past_y_dist distance=17
